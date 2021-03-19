@@ -2,6 +2,7 @@
 * lufer
 * P-EGI
 * Apontadores em C
+* Aritmetica de apontadores
 */
 
 #include <stdio.h>
@@ -31,11 +32,11 @@ int main() {
 	printf("\n Value of a = %d", *b);
 
 	f();
-	//get(&a);
-
+	//get(&a)
 	int* c = getArray(10);
 	showArray(c, 10);
 	free(c);
+
 
 #pragma endregion
 
@@ -96,6 +97,10 @@ int main() {
 	mostraArrayII(valores, 5);
 
 #pragma endregion
+
+
+	a = whatItDoes();
+	printf("a= %d\n", a);
 
 	getch();
 	return 0;

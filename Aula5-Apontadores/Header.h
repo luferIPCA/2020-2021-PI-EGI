@@ -23,4 +23,12 @@ void mostraArray(int v[], int size);
 
 void mostraArrayII(int* v, int size);
 
+int whatItDoes();
+
+typedef struct Carro
+{
+	char matricula[8];
+	int ano;
+
+}Carro;
 #endif

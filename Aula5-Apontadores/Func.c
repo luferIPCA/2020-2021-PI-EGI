@@ -6,14 +6,24 @@
 #pragma region UM
 
 /// <summary>
-/// 
+/// Apresenta o conteúdo de um array com recurso a um apontador
 /// </summary>
-/// <param name="v"></param>
-/// <param name="n"></param>
+/// <param name="v">array com valores</param>
+/// <param name="n">dimensão do array</param>
 void showArray(int v[], int n) {
+
+	//h1:processo normal
+	for(int i=0; i<n; i++)
+		printf("\nv[%d]=%d", i + 1, v[i]);
+
+	//h2: com recurso a apontador
 	int* ptr = v;
-	for (int i = 0; i < n; i++)
-		printf("\nv[%d]=%d", i + 1, *(ptr++));
+	for (int i = 0; i < n; i++) {
+		printf("\nv[%d]=%d", i + 1, *ptr);
+		ptr++;
+		//ou
+		//printf("\nv[%d]=%d", i + 1, *ptr++);
+	}
 }
 
 /// <summary>
@@ -58,7 +68,20 @@ int get(int* ptr) {
 /// <returns></returns>
 int* getArray(int size) {
 	int* val = (int*)malloc(sizeof(int) * size);
+	val[0] = 2;
+	val[1] = 3 * val[0];
+	val[3] = -7;
 	return val;
+}
+
+int whatItDoes() {
+	static int x = 0;
+	if (x % 2 == 0) x++;
+	else
+		x += 2;
+	if (x <= 10) 
+		whatItDoes();
+	return x;
 }
 
 #pragma endregion
