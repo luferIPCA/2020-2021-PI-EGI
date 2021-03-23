@@ -4,7 +4,7 @@ typedef struct Conta {
 	int numero;
 	double saldo;
 	struct Conta* seguinte;
-}ContaBancaria;
+}ContaBancaria, *ContaPtr;
 
 //#define FALSE 0
 //#define TRUE 1

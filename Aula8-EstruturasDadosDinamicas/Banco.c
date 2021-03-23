@@ -11,7 +11,6 @@
 
 int main() {
 
-
 	ContaBancaria c1;
 	c1.saldo = 200;
 	c1.numero = 1;
@@ -37,6 +36,7 @@ int main() {
 	//Listas Ligadas Simples em C
 
 	ContaBancaria* banco;
+	ContaPtr y;				//ContaBancaria* == ContaPtr
 
 	banco = CriaConta(200);
 	banco->seguinte = CriaConta(2000);
