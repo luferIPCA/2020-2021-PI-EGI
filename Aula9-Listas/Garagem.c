@@ -38,7 +38,7 @@ int main() {
 	Carro* ini;
 
 	//h1 - aloco memoria
-	ini = (Carro*)calloc(1*sizeof(Carro));
+	ini = (Carro*)malloc(1*sizeof(Carro));
 	ini->ano = 2020;
 
 	//h2 - invoco função que aloca memória
