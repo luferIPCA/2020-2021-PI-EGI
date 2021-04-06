@@ -2,6 +2,7 @@
  * \file   Fabrica.c
  * \brief	Gestão de Linha de Montagem
  *			Definição de Funções
+ *			Gestão de Ficheiros
  * 
  * \author lufer
  * \date   April 2021
@@ -172,6 +173,49 @@ bool ExisteMaquina(int numMaquina, ListaMaquinas* head) {
 	}
 	//se (aux !==NULL)==true então é porque foi encontrada uma máquina com o número que se procura
 	return (aux != NULL);		
+}
+
+
+bool PreservaInformação(char fileName[], ListaMaquinas* h) {
+	FILE* fp;
+	if (h == NULL) 
+		return false;
+	if ((fp = fopen(fileName, "wb")) == NULL)		//w-write
+	{
+		return false;
+	}
+
+	ListaMaquinas* current = h;
+	while (current != NULL) {
+		//fseek(fp, 0, SEEK_END);
+		fwrite(&current->maquina, sizeof(Maquina), 1, fp);
+		current = current->prox;
+	}
+
+	fclose(fp);
+	return true;
+}
+
+ListaMaquinas* CarregaDados(char fileName[], ListaMaquinas* h) {
+	FILE* fp;
+	fp = fopen(fileName, "rb");		//r - read
+	if (fp == NULL) 
+		return false;
+
+	//limpar lista
+	//if(h!=NULL) DeleteAll(h);
+	//h = NULL;
+
+	//ler e construir lista
+	Maquina* aux;
+	aux = (Maquina*)calloc(sizeof(Maquina));
+	while (fread(aux, sizeof(Maquina), 1, fp) != 0) {
+		h = InserePorOrdem(h,aux);
+		aux = (Maquina*)calloc(sizeof(Maquina));
+	}
+	fclose(fp);
+	fp = NULL;
+	return h;
 }
 
 ListaMaquinas* DeleteAll(ListaMaquinas* h) {

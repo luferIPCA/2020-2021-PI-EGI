@@ -35,7 +35,16 @@ ListaMaquinas* InserePorOrdem(ListaMaquinas* head, Maquina* nova);
 /// Verifica se determinado número de máquina já existe
 bool ExisteMaquina(int numMaquina, ListaMaquinas* head);
 
-ListaMaquinas *DeleteAll(ListaMaquinas* h);
+//Destroi lista
+ListaMaquinas* DeleteAll(ListaMaquinas* h);
+
+//Gerir Preservação de Dados - Ficheiros
+//Guarda Dados
+bool PreservaInformação(char fileName[], ListaMaquinas* h);
+//Carrega Dados
+ListaMaquinas* CarregaDados(char fileName[], ListaMaquinas* h);
+
+
 
 #pragma endregion
 

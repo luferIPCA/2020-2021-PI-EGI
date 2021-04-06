@@ -1,6 +1,7 @@
 /*****************************************************************//**
  * \file   Fabrica.c
- * \brief  Gestão de Linha de Montage
+ * \brief	Gestão de Linha de Montagem
+ *			Gestão de Ficheiros
  *
  * \author lufer
  * \date   April 2021
@@ -47,8 +48,11 @@ int main() {
 #pragma region GereLinhaMontagem
 
 
-	ListaMaquinas* head = NULL;		//marca o ínicio da lista; No inicio a lista está vazia						
-	//a)
+	ListaMaquinas* head = NULL;		//marca o ínicio da lista; No inicio a lista está vazia
+	
+	head = CarregaDados("Fabrica1", head);		//Carrega dados do ficheiro
+									
+									//a)
 	Maquina* nova = CriaMaquinaNova(12);
 	//b)
 	//i) Insere o 1º elemento da lista
@@ -97,5 +101,8 @@ int main() {
 
 	//head = DeleteAll(head);
 	//MostraLinhaMontagem(head);
+
+	bool resultado = PreservaInformação("Fabrica1", head);	//Guarda dados no ficheiro
+
 #pragma endregion
 }
