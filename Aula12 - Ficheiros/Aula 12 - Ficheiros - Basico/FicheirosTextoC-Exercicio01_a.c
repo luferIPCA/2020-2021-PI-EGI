@@ -1,7 +1,5 @@
 /*
 	Name:  FicheiroTextoC-Exercício01_a.c
-	Author:
-	Date: 2020
 	Description: percorrer o ficheiro caracter a caracter e apresentar no ecran o conteúdo do ficheiro
 	             com o prefixo do número de cada linha
 */
@@ -30,12 +28,12 @@ int main2() {
 		//com while()
 		while (c != EOF) {
 				
-			printf("%c", c); // escreve na consola				
+			printf("%c", c); // escreve na consola o caracter lido			
 			if (c == '\n') {					
 				nLinhas = nLinhas + 1;
 				printf("%d: ", nLinhas);
 				}		
-            c = fgetc(af); // avanca com a leitura
+            c = fgetc(af); // lê próximo caracter
         }
 
 		//ou com do..while

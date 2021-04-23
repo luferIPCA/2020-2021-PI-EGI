@@ -1,7 +1,5 @@
 /*
 	Name:  exemplo ficheiro binário: leitura
-	Author: ESI-LP1-1718
-	Date: 2020
 	Description:   leitura a partir de um ficheiro binário dos valores das temperaturas médias diárias nos últimos 7 dias
 */
 #include <stdio.h>

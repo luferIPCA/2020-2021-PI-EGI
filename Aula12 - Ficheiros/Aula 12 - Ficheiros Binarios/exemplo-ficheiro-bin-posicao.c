@@ -1,7 +1,5 @@
 /*
 	Name:  exemplo ficheiro binário: mover o indicador de posição do ficheiro
-	Author: ESI-LP1-1718
-	Date: 2020
 	Description:  exemplo que permite aceder ao quinto valor das temperaturas
 */
 

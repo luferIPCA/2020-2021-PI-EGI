@@ -1,7 +1,5 @@
 /*
 	Name:  exemplo ficheiro binário: escrita
-	Author: ESI-LP1-1718
-	Date: 2020
 	Description:   ler os valores das temperaturas médias diárias nos últimos 7 dias,
                    guardando os esses valores num ficheiro binário
 */

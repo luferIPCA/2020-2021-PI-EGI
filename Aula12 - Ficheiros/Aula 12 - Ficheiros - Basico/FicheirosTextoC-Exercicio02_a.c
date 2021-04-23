@@ -1,7 +1,5 @@
 /*
 	Name:  Modelo
-	Author:
-	Date: 2020
 	Description:   programa para permitir registar novas inscrições (nome)
                     no ficheiro de texto "inscrições.txt", e listar as inscrições atuais.
                     fprintf, fgets

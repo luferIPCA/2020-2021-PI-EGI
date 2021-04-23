@@ -29,9 +29,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula12 - Ficheiros Texto", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula12 - Ficheiros Binarios", "Aula12 - Ficheiros\Aula 12 - Ficheiros Binarios\Aula 12 - Ficheiros Binarios.vcxproj", "{FCAB2C0A-8C12-4513-A2DD-B3AA0314F4ED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula12 - Reutilizacao de Codigo", "Aula12 - Reutilizacao de Codigo\Aula12 - Reutilizacao de Codigo.vcxproj", "{FE50182A-6DF6-4C48-ABAA-E8C207908AA7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula12 - Reutilizacao de Codigo - Ficheiros", "Aula12 - Reutilizacao de Codigo\Aula12 - Reutilizacao de Codigo.vcxproj", "{FE50182A-6DF6-4C48-ABAA-E8C207908AA7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula12 - Ficheiros - Operacoes", "Aula12 - Ficheiros\Aula 12 - Ficheiros - Operacoes\Aula 12 - Ficheiros - Operacoes.vcxproj", "{C33280EA-35C5-48AE-86D8-B7888BD5F7F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula13 - Revisoes", "Aula13 - Revisoes\Aula13 - Revisoes.vcxproj", "{39887302-A369-4C19-9BF6-779130B07611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,14 @@ Global
 		{C33280EA-35C5-48AE-86D8-B7888BD5F7F1}.Release|x64.Build.0 = Release|x64
 		{C33280EA-35C5-48AE-86D8-B7888BD5F7F1}.Release|x86.ActiveCfg = Release|Win32
 		{C33280EA-35C5-48AE-86D8-B7888BD5F7F1}.Release|x86.Build.0 = Release|Win32
+		{39887302-A369-4C19-9BF6-779130B07611}.Debug|x64.ActiveCfg = Debug|x64
+		{39887302-A369-4C19-9BF6-779130B07611}.Debug|x64.Build.0 = Debug|x64
+		{39887302-A369-4C19-9BF6-779130B07611}.Debug|x86.ActiveCfg = Debug|Win32
+		{39887302-A369-4C19-9BF6-779130B07611}.Debug|x86.Build.0 = Debug|Win32
+		{39887302-A369-4C19-9BF6-779130B07611}.Release|x64.ActiveCfg = Release|x64
+		{39887302-A369-4C19-9BF6-779130B07611}.Release|x64.Build.0 = Release|x64
+		{39887302-A369-4C19-9BF6-779130B07611}.Release|x86.ActiveCfg = Release|Win32
+		{39887302-A369-4C19-9BF6-779130B07611}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

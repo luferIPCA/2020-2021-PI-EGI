@@ -1,7 +1,5 @@
 /*
 	Name:
-	Author: oribeiro & lufer
-	Date: 2020
 	Description:
 		- Manipulação de Ficheiros
 
