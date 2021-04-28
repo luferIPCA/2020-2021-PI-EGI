@@ -76,6 +76,9 @@
     <ClCompile Include="FicheirosTextoC-Exercicio03.c" />
     <ClCompile Include="ToArray.c" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

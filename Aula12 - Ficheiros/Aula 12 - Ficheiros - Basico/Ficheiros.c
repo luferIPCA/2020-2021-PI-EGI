@@ -1,5 +1,5 @@
 /*
-	Name:
+	Author: Oscar & Lufer
 	Description:
 		- Manipulação de Ficheiros
 
@@ -28,7 +28,7 @@ int inversa(char *txtIn, char *txtOut);
 //-------------------------------------------------------------------------
 
 // função principal
-int main3() {
+int main7() {
 	setlocale(LC_ALL, "Portuguese");
 
 	// declaração e inicialização de variáveis
@@ -47,12 +47,10 @@ int main3() {
 	if (fIn == NULL){
 		perror("Erro ao abrir o ficheiro\n");
 		getche();
-		//return(-1);
 	}
 	
 	//Ficheiro de saída
 	fOut = fopen("frasesInversas.txt", "w"); // abrir frases.txt em modo escrita
-	//fOut = fopen("copiaFrases.txt", "a"); // abrir copiaFrases.txt em modo escrita
 	//testar se tudo correu bem na criação do file
 
 

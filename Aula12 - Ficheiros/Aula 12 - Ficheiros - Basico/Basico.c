@@ -16,7 +16,7 @@
 
 #define MAXCHAR 100
 
-int main6(int argc, char *argv[]) {
+int main8(int argc, char *argv[]) {
 	FILE* fp;
 	char s1[20], s2[20];
 	int v;
