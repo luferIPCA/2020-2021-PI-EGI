@@ -157,9 +157,6 @@ int main8(int argc, char *argv[]) {
 		}
 	}
 	fclose(fp2);
-
-
-
 	return 0;
 
 	//EXERCICIO
