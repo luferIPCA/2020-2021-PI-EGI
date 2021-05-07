@@ -24,6 +24,7 @@
     <ProjectGuid>{586a6f16-b605-47be-a63e-0b21cf4b1dd4}</ProjectGuid>
     <RootNamespace>Aula8EstruturasDadosDinaamicas</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Aula08-EstruturasDadosDinaamicas</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

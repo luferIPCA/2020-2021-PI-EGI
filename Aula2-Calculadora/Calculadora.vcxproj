@@ -24,7 +24,7 @@
     <ProjectGuid>{cc18e95d-75d7-42e9-8fb9-a82586c8dcdd}</ProjectGuid>
     <RootNamespace>Calculadora</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Aula 2-Calculadora</ProjectName>
+    <ProjectName>Aula02-Calculadora</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

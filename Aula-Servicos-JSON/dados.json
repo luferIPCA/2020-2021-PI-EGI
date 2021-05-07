@@ -1,0 +1,26 @@
+{
+    "clube": "Benfica",
+    "int": 1,
+    "double": 1.234,
+    "nullThing": null,
+    "bool": true,
+    "ArrayVazio": []
+}
+{
+    "anArray": [
+        "array one",
+        -2,
+        1234.567,
+        null,
+        false,
+        {
+            "obj3_one": "one",
+            "obj3_two": "two"
+        },
+        [
+            0,
+            1,
+            2
+        ]
+    ]
+}

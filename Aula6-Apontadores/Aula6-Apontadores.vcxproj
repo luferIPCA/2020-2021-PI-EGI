@@ -24,6 +24,7 @@
     <ProjectGuid>{9aa1ab85-f73a-41ab-9b3e-1d65f501ddfd}</ProjectGuid>
     <RootNamespace>Aula6Apontadores</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Aula06-Apontadores</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
