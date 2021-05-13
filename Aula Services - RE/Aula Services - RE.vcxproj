@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ac373726-d5b2-4ced-a58a-f78d3e1f8633}</ProjectGuid>
-    <RootNamespace>Aula16Exercicio2Folha5</RootNamespace>
+    <ProjectGuid>{65307649-f329-473a-8270-44ab502c2183}</ProjectGuid>
+    <RootNamespace>AulaServicesRE</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -92,7 +92,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Aula16-LibLista.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>regex.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,13 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Dados.h" />
-    <ClInclude Include="Dados1.h" />
-    <ClInclude Include="Integrar.h" />
+    <ClCompile Include="FindReplace.c" />
+    <ClCompile Include="Source.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Integrar.c" />
-    <ClCompile Include="TrataDados.c" />
+    <ClInclude Include="regex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

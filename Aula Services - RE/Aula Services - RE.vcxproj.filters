@@ -15,22 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Integrar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Dados.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Dados1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="Source.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FindReplace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TrataDados.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Integrar.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

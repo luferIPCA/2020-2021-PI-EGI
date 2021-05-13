@@ -9,15 +9,15 @@ Exercicio 2
 
 Linha* CarregaDados(char fileName[], Linha* inicio) {
 	FILE* fp;
-	Linha aux;
+	Linha aux;		//guarda temporariamente os dados de cada linha do ficheiro
 
 	fp = fopen(fileName, "r");
 	if (fp == NULL) return false;
 	while (fscanf(fp,"%s\t%d\t%d\t%d", aux.data, &aux.in, &aux.out, &aux.duracao) != EOF) {
-		//Cria espaço em memória
+		//Cria espaço em memória e coloca lá os dados que vêm do ficheiro
 		Linha *nova = NovaLinha(aux.data, aux.in, aux.out, aux.duracao);
 		//Insere dados na lista
-		inicio = InsereLinhaLista(&aux, inicio);
+		inicio = InsereLinhaLista(nova, inicio);
 	}
 	fclose(fp);
 	return inicio;
@@ -38,6 +38,7 @@ Linha* NovaLinha(char data[], int a, int b, int c) {
 	aux->duracao = c;
 	aux->in = a;
 	aux->out = b;
+	aux->next = NULL;
 	return aux;
 }
 
@@ -54,7 +55,8 @@ Linha* InsereLinhaLista(Linha* novo, Linha* inicio) {
 	{
 		//coloco-me no fim da lista
 		Linha* aux = inicio;
-		while (aux && aux->next != NULL) aux = aux->next;
+		while (aux && aux->next != NULL) 
+			aux = aux->next;
 		//anexo o novo carro
 		aux->next = novo;
 	}
